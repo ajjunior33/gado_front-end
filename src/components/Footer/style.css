@@ -1,0 +1,10 @@
+footer p a {
+    color:#40407a;
+    font-size: 1em;
+    text-decoration:none;
+    font-weight: 600;
+}
+
+footer p a:hover{
+    text-decoration:underline;
+    }

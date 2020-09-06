@@ -2,46 +2,51 @@
 :root {
   --white: #f1f1f1;
   --dark: #333333;
-  --blue: ;
+  --blue: #40407a;
   --green: #16a085;
+  --red: #ff5e57;
+  --yellow: #ffc048;
   --basic-gray: #ecf0f1;
+  --dark-red: #ff3f34;
+  --dark-blue: #2c2c54;
+  --dark-green: #05c46b;
+  --dark-yellow: #ffa801;
 }
+
 /*
 font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;*/
+
 * {
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   background-color: #f1f1f1;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-body,
-input,
-button,
-textarea {
+body, input, table, button, textarea {
   font-size: 1em;
   color: var(--dark);
   font-family: "Roboto", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .form-group {
   margin: 15px 10px;
 }
+
 .form-control {
   border: 1px solid var(--green);
   padding: 15px 10px;
@@ -51,38 +56,111 @@ code {
 }
 
 /* BOTÕES*/
+
 .btn {
-  margin:10px 0;
+  margin: 10px 0;
   border: 0;
   padding: 12px 35px;
   border-radius: 8px;
 }
-.btn:hover{
+
+.btn:hover {
   filter: brightness(90%);
 }
 
 .btn-success {
   box-shadow: 0px 4px 4px rgba(22, 160, 133, 0.25);
-  background: var(--green);;
-  color:var(--white);
+  background: var(--green);
+  ;
+  color: var(--white);
 }
 
-.btn-block{
+.btn-block {
   width: 100%;
 }
 
-
-.btn-link{
+.btn-link {
   text-decoration: none;
-  color:var(--dark);
+  color: var(--dark);
   font-size: 1.2em;
   font-weight: bold;
 }
-.btn-link:hover{
+
+.btn-link:hover {
   text-decoration: underline;
 }
+
 /*Text*/
 
-.text-center{
+.text-center {
   text-align: center;
+}
+
+/*Table*/
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 15px auto;
+}
+
+thead {
+  background-color: #DDD;
+  border-bottom: 2px solid #bababa;
+}
+
+thead th {
+  border-right: 1px solid #bababa;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.status {
+  padding: 5px;
+  background-color: #CCC;
+  max-width: 180px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.st-success {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.st-success:hover {
+  background-color: var(--dark-green);
+}
+
+.st-warning {
+  color: var(--dark);
+  background-color: var(--yellow);
+}
+
+.st-warning:hover {
+  background-color: var(--dark-yellow);
+}
+
+.st-danger {
+  color: var(--white);
+  background-color: var(--red);
+}
+
+.st-danger:hover {
+  background-color: var(--dark-red);
+}
+
+.st-primary {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.st-primary:hover {
+  background-color: var(--dark-blue);
 }
